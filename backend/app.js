@@ -11,7 +11,7 @@ const PORT = process.env.PORT
 //middlewares
 app.use(express.json())
 app.use(cors({
-    origin: ["https://deploy-mern-1whq.vercel.app"],
+    origin: ["https://expense-tracker-mern-frontend-pied.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true
 }));
