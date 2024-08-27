@@ -11,7 +11,7 @@ import { useGlobalContext } from './context/globalContext';
 
 function App() {
   const [active, setActive] = useState(1)
-
+fetch("https://expense-tracker-mern-api.vercel.app/api/expenses")
   const global = useGlobalContext()
   console.log(global);
 
