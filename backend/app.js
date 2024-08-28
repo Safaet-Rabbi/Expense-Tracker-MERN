@@ -16,7 +16,6 @@ app.use(cors({
     credentials: true
 }));
 
-mongoose.connect('mongodb://localhost:27017/expense-tracker');
 
 //routes
 readdirSync('./routes').map((route) => app.use('/api/v1', require('./routes/' + route)))
